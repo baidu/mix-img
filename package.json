@@ -24,8 +24,8 @@
     },
     "lint-staged": {
         "linters": {
-            "*.js": [
-                "eslint"
+            "*.{js}": [
+                "npm run lint"
             ]
         }
     },
@@ -68,7 +68,7 @@
     },
     "license": "MIT",
     "repository": {
-        "type": "git",
-        "url": "https://github.com/baidu/mix-img.git"
+        "type" : "git",
+        "url" : "https://github.com/baidu/mix-img.git"
     }
 }
