@@ -1,6 +1,6 @@
 /**
  * @file: rollup umd配置文件
- * @author: haoxin03@baidu.com)
+ * @author: haoxin
  */
 // rollup.umd.config.js
 import babel from 'rollup-plugin-babel';

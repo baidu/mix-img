@@ -1,6 +1,6 @@
 /**
  * @file errorMap
- * @author haoxin(haoxin03@baidu.com)
+ * @author haoxin
  */
 
 export const errorMap = {

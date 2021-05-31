@@ -1,6 +1,6 @@
 /**
  * @file: 工具函数
- * @author: haoxin03(haoxin03@baidu.com)
+ * @author: haoxin
  */
 
 /**
@@ -12,9 +12,11 @@ export const clientType = () => {
     if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
         client = 'ios';
 
-    } else if (/(Android)/i.test(navigator.userAgent)) {
+    }
+    else if (/(Android)/i.test(navigator.userAgent)) {
         client = 'android';
-    } else {
+    }
+    else {
         client = 'pc';
     }
     return client;

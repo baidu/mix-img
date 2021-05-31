@@ -1,9 +1,9 @@
 /**
  * @file: babel配置文件
- * @author: zhw(zhenghaiwang@baidu.com)
+ * @author: zhw
  * @Date: 2021-01-09 14:16:42
  * @Last Modified by: zhw
- * @Last Modified time: 2021-01-09 14:45:59
+ * @Last Modified time: 2021-05-31 22:08:36
  */
 module.exports = function (api) {
     api.cache(true);

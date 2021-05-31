@@ -1,6 +1,6 @@
 /**
  * @file: 测试index文件
- * @author: haoxin03@baidu.com
+ * @author: haoxin
  */
 
 // createImg方法调用了onload, 但jest-canvas-mock暂时还没找到可以开启这个方法的地方，故mock
@@ -35,7 +35,8 @@ describe('绘制背景图', () => {
         expect.assertions(1);
         try {
             await addBackgroundImg();
-        } catch (e) {
+        }
+        catch (e) {
             expect(e).toHaveProperty('errno', 20001);
         }
     });
@@ -57,7 +58,8 @@ describe('添加动态元素', () => {
         expect.assertions(1);
         try {
             await addDynamicElementToCanvas();
-        } catch (e) {
+        }
+        catch (e) {
             expect(e).toHaveProperty('errno', 30001);
         }
     });

@@ -1,6 +1,6 @@
 /**
  * @file: 向canvas中增加元素
- * @author: haoxin03(haoxin03@baidu.com)
+ * @author: haoxin
  */
 
 import {getQrCodeImg} from './qrcode';
@@ -56,11 +56,13 @@ export const addTextToCanvas = async (ctx, config = {}, replaceText) => {
         // 等待字体加载完毕
         try {
             document?.fonts?.load && await document.fonts.load(ctx.font);
-        } catch (e) {
+        }
+        catch (e) {
             console.error('[Font loading failed]', e);
         }
         ctx.fillText(text, config.position?.x || 0, config.position?.y || 0);
-    } catch (err) {
+    }
+    catch (err) {
         return Promise.reject(Object.assign({}, errorMap.ADD_TEXT_ERROR, {err}));
     }
 };
@@ -112,7 +114,8 @@ export const addImgToCanvas = async (ctx, config = {}, replaceText, timeout) => 
         }
         ctx.drawImage(img, config.position?.x, config.position?.y, width, height);
         ctx.restore();
-    } catch (err) {
+    }
+    catch (err) {
         return Promise.reject(Object.assign({}, errorMap.ADD_IMG_ERROR, {err}));
     }
 };
@@ -133,7 +136,8 @@ export const addQrCodeToCanvas = async config => {
             ctx.drawImage(qrCodeCanvas, qrCode.x || 0, qrCode.y || 0, qrCode.width || 70, qrCode.height || 70);
         }
         return config.base.dataType === 'canvas' ? {canvas: config.canvasImg} : config;
-    } catch (err) {
+    }
+    catch (err) {
         return Promise.reject(Object.assign({}, errorMap.ADD_QRCODE_ERROR, {err}));
     }
 };
@@ -157,7 +161,8 @@ export const createCanvas = config => {
         const ctx = canvas.getContext('2d');
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         return Object.assign({canvasImg: canvas, ctx}, config);
-    } catch (err) {
+    }
+    catch (err) {
         return Promise.reject(Object.assign({}, errorMap.CREATE_CANVAS_ERROR, {err}));
     }
 };
@@ -175,7 +180,8 @@ export const canvasToBase64 = (canvas, fileConfig = {}) => {
         const fileType = fileConfig.fileType ? `image/${fileConfig.fileType}` : 'image/jpeg';
         const quality = fileConfig.quality || 0.8;
         return canvas.toDataURL(fileType, quality);
-    } catch (err) {
+    }
+    catch (err) {
         return Promise.reject(Object.assign({}, errorMap.TO_BASE64_ERROR, {err}));
     }
 };

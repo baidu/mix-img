@@ -1,6 +1,6 @@
 /**
  * @file: 测试utils方法
- * @author: haoxin03@baidu.com
+ * @author: haoxin
  */
 
 import {clientType, renameKey, splitArr} from '../../src/utils/tools';

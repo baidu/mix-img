@@ -1,6 +1,6 @@
 /**
  * @file: 二维码生成
- * @author: haoxin03(haoxin03@baidu.com)
+ * @author: haoxin
  */
 
 import QRCode from 'qrcodejs2-fixes';

@@ -1,9 +1,9 @@
 /**
  * @file: e2e入口文件
- * @author: zhw(zhenghaiwang@baidu.com)
+ * @author: zhw
  * @Date: 2021-01-09 13:34:21
  * @Last Modified by: zhw
- * @Last Modified time: 2021-05-11 20:49:27
+ * @Last Modified time: 2021-05-31 22:08:08
  */
 import san from 'san';
 import {mixImg} from '../../src/index';

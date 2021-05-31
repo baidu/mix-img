@@ -1,6 +1,6 @@
 /**
  * @file: 图片合成方法
- * @author: haoxin03(haoxin03@baidu.com)
+ * @author: haoxin
  */
 
 import {
