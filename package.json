@@ -24,8 +24,8 @@
     },
     "lint-staged": {
         "linters": {
-            "*.{js}": [
-                "eslint"
+            "*.js": [
+                "eslint --cache"
             ]
         }
     },
