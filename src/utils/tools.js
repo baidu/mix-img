@@ -11,7 +11,6 @@ export const clientType = () => {
     let client = '';
     if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
         client = 'ios';
-
     }
     else if (/(Android)/i.test(navigator.userAgent)) {
         client = 'android';
