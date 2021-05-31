@@ -15,7 +15,7 @@ import {errorMap} from './config/errorMap';
 import {splitArr} from './utils/tools';
 import md5 from 'md5';
 
-let hash = '';；
+let hash = '';
 
 /**
  * 绘制背景图
