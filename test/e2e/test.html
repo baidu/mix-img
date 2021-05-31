@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合成图片测试</title>
+    <style>
+        @font-face {
+            font-family: 'myFont';
+            src: url("https://efe-h2.cdn.bcebos.com/ceug/resource/res/2021-1/1611891166782/c4964f1209aa.ttf") format('truetype');
+        }
+
+        @font-face {
+            font-family: 'myFont2';
+            src: url("https://efe-h2.cdn.bcebos.com/ceug/resource/res/2020-8/1597241411459/ba2b12610e62.ttf") format('truetype');
+        }
+
+        html {
+            line-height: 1.15;
+            font-size: 5vw;
+        }
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+        }
+
+        .mi-btn {
+            width: 100vw;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background: #ccc;
+        }
+
+        #font-load-one {
+            font-size: 0;
+            font-family: 'myFont', serif;
+        }
+
+        #font-load-two {
+            font-size: 0;
+            font-family: 'myFont2', serif;
+        }
+    </style>
+</head>
+<body>
+<script src="/e2e/test.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/vConsole/1.0.1/vconsole.min.js"></script>
+<script>
+</script>
+</body>
+</html>

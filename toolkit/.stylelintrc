@@ -1,0 +1,3 @@
+{
+    "extends": "@ecomfe/stylelint-config/baidu/default"
+}

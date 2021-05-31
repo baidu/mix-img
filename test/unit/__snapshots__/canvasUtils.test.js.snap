@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`向canvas中添加二维码 绘制二维码 1`] = `
+Array [
+  Object {
+    "props": Object {
+      "dHeight": 150,
+      "dWidth": 300,
+      "dx": 275,
+      "dy": 573,
+      "img": <canvas />,
+      "sHeight": 150,
+      "sWidth": 300,
+      "sx": 0,
+      "sy": 0,
+    },
+    "transform": Array [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "drawImage",
+  },
+]
+`;
+
+exports[`向canvas中添加图片 添加图片 1`] = `
+Array [
+  Object {
+    "props": Object {
+      "dHeight": 0,
+      "dWidth": 0,
+      "dx": 39,
+      "dy": 200,
+      "img": <img
+        src="https://efe-h2.cdn.bcebos.com/ceug/resource/res/2020-09/1599455753277/pu26hccjgzoj.png"
+      />,
+      "sHeight": 0,
+      "sWidth": 0,
+      "sx": 0,
+      "sy": 0,
+    },
+    "transform": Array [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "drawImage",
+  },
+]
+`;
+
+exports[`向canvas中添加文本 没有替换字段的文本 1`] = `
+Array [
+  Object {
+    "props": Object {
+      "value": "#ffebc0",
+    },
+    "transform": Array [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fillStyle",
+  },
+  Object {
+    "props": Object {
+      "value": "34px Roboto",
+    },
+    "transform": Array [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "font",
+  },
+  Object {
+    "props": Object {
+      "value": "center",
+    },
+    "transform": Array [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "textAlign",
+  },
+  Object {
+    "props": Object {
+      "value": "alphabetic",
+    },
+    "transform": Array [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "textBaseline",
+  },
+  Object {
+    "props": Object {
+      "maxWidth": null,
+      "text": "名字叫小芳",
+      "x": 187,
+      "y": 200,
+    },
+    "transform": Array [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fillText",
+  },
+]
+`;
+
+exports[`设置clipZone 添加图片 1`] = `Array []`;
