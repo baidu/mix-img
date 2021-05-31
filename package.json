@@ -24,7 +24,7 @@
     },
     "lint-staged": {
         "linters": {
-            "*.{js}": [
+            "*.js": [
                 "npm run lint"
             ]
         }
