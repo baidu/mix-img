@@ -4,8 +4,7 @@
 
 ### 如何启动
 ```
-# 将代码clone到本地
-git clone https://github.com/baidu/mix-img.git
+# 将本库代码clone到本地
 # 安装依赖
 npm i
 # 启动配置调试工具
