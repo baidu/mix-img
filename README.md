@@ -20,12 +20,12 @@ async function getImg() {
 > mixConfig参数配置可参见参数说明文档；Lib库使用者可以通过调试工具在本地进行预览调试，生成配置。
 
 ## Document
-- [Start](./README.md)
-- [Example](./test/e2e/index.js)
-- [mixImg方法使用说明](./docs/mixImg.md)
-- [mixConfig参数说明文档](./docs/mixConfig.md)
-- [参数调试工具](./docs/tool.md)
-- [本库开发者阅读](./docs/dev.md)
+- [Start](https://github.com/baidu/mix-img/blob/master/README.md)
+- [Example](https://github.com/baidu/mix-img/blob/master/test/e2e/index.js)
+- [mixImg方法使用说明](https://github.com/baidu/mix-img/blob/master/docs/mixImg.md)
+- [mixConfig参数说明文档](https://github.com/baidu/mix-img/blob/master/docs/mixConfig.md)
+- [参数调试工具](https://github.com/baidu/mix-img/blob/master/docs/tool.md)
+- [本库开发者阅读](https://github.com/baidu/mix-img/blob/master/docs/dev.md)
 
 ## ChangeLog
-Please visit document [ChangeLog](./CHANGELOG.md)
+Please visit document [ChangeLog](https://github.com/baidu/mix-img/blob/master/CHANGELOG.md)
