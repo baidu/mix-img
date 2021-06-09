@@ -18,7 +18,7 @@ const App = san.defineComponent({
                     <div id="font-load-two">.</div>
                 </div>`,
     async getImg() {
-        const res = await mixImg(base64Config);
+        const res = await mixImg(canvasConfig);
         // 返回了canvas则置入页面
         if (res.errno === 0 && res.data.canvas) {
             document.getElementById('show-img-wrap').appendChild(res.data.canvas);

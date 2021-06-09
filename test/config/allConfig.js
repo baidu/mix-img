@@ -15,7 +15,7 @@ export const mixConfig = {
         'quality': 0.8,
         'fileType': 'jpeg',
         'loadingTimeout': 3000,
-        'dataType': 'canvas'
+        'dataType': 'base64'
     },
     'qrCode': {
         'width': 74,
@@ -33,7 +33,7 @@ export const mixConfig = {
                 'y': 353
             },
             'style': {
-                'fontSize': 22,
+                'fontSize': 20,
                 'color': '#ffebc0',
                 'textAlign': 'center',
                 'fontWeight': 'bold',
@@ -49,13 +49,27 @@ export const mixConfig = {
             },
             'style': {
                 'textAlign': 'center',
-                'fontSize': 16,
-                'color': '#ffebc0',
+                'fontSize': 26,
+                'color': '#ff0000',
                 'fontWeight': 'normal',
                 'fontFamily': 'myFont2'
             },
             'text': '{userName}',
             'weight': 1
+        },
+        {
+            'type': 2,
+            'position': {
+                'x': 187,
+                'y': 204
+            },
+            'style': {
+                'textAlign': 'center',
+                'fontSize': 26,
+                'color': '#ffff00',
+                'fontWeight': 'normal'
+            },
+            'text': '{userName}'
         },
         {
             'type': 1,
