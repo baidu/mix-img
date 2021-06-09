@@ -39,27 +39,28 @@ export const addTextToCanvas = async (ctx, config = {}, replaceText) => {
         if (!config.text) {
             return;
         }
+        // 读取字体配置
+        const fontSize = config.style?.fontSize ? `${config.style.fontSize}px` : '20px';
+        const fontWeight = config.style?.fontWeight ? `${config.style.fontWeight}` : 'normal';
+        const initFF = clientType() === 'ios' ? 'PingFang SC' : 'Roboto';
+        const fontFamily = config.style?.fontFamily ? `${config.style.fontFamily}, ${initFF}` : initFF;
+        const font = config.font ? config.font : `${fontWeight} ${fontSize} ${fontFamily}`;
+        // 等待字体加载完毕
+        try {
+            document?.fonts?.load && await document.fonts.load(font);
+        } catch (e) {
+            console.error('[Font loading failed]', e);
+        }
         // 颜色
         ctx.fillStyle = config.style?.color;
         // 字体
-        const fontSize = config.style?.fontSize ? `${config.style.fontSize}px` : '20px';
-        const initFF = clientType() === 'ios' ? 'PingFang SC' : 'Roboto';
-        const fontFamily = config.style?.fontFamily ? `${config.style.fontFamily}, ${initFF}` : initFF;
-        const fontWeight = config.style?.fontWeight ? `${config.style.fontWeight}` : 'normal';
-        ctx.font = config.font ? config.font : `${fontWeight} ${fontSize} ${fontFamily}`;
+        ctx.font = font;
         // 水平对齐
         ctx.textAlign = config.style?.textAlign ? config.style.textAlign : 'left';
         // 垂直对齐
         ctx.textBaseline = config.style?.textBaseline ? config.style.textBaseline : 'alphabetic';
         // 文本
         const text = replaceVariable(config.text, replaceText);
-        // 等待字体加载完毕
-        try {
-            document?.fonts?.load && await document.fonts.load(ctx.font);
-        }
-        catch (e) {
-            console.error('[Font loading failed]', e);
-        }
         ctx.fillText(text, config.position?.x || 0, config.position?.y || 0);
     }
     catch (err) {
