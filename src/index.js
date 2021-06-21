@@ -15,6 +15,8 @@ import {errorMap} from './config/errorMap';
 import {splitArr} from './utils/tools';
 import md5 from 'md5';
 
+export {getQrCodeImg} from './utils/qrcode';
+
 let hash = '';
 
 /**
