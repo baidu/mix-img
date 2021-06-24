@@ -129,12 +129,12 @@ export const addImgToCanvas = async (ctx, config = {}, replaceText, timeout) => 
 export const addQrCodeToCanvas = async config => {
     try {
         let {ctx, qrCode, replaceText} = config;
-        if (qrCode?.text) {
+        if (qrCode?.text && qrCode.width && qrCode.height) {
             qrCode.text = replaceVariable(qrCode.text, replaceText);
             qrCode = renameKey(qrCode, 'foreground', 'colorDark');
             qrCode = renameKey(qrCode, 'background', 'colorLight');
             const qrCodeCanvas = await getQrCodeImg(qrCode);
-            ctx.drawImage(qrCodeCanvas, qrCode.x || 0, qrCode.y || 0, qrCode.width || 70, qrCode.height || 70);
+            ctx.drawImage(qrCodeCanvas, qrCode.x || 0, qrCode.y || 0, qrCode.width, qrCode.height);
         }
         return config.base.dataType === 'canvas' ? {canvas: config.canvasImg} : config;
     }

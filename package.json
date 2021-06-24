@@ -1,6 +1,6 @@
 {
     "name": "mix-img",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "A fast mix image javascript tool libary",
     "module": "dist/index.min.js",
     "browser": "dist/umd/index.umd.js",

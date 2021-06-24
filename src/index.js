@@ -25,10 +25,12 @@ let hash = '';
 export const addBackgroundImg = async config => {
     try {
         const {base, ctx} = config;
-        const img = await createImg(base.backgroundImg, base.loadingTimeout);
         const width = base.width || 300;
         const height = base.height || 300;
-        ctx.drawImage(img, 0, 0, width, height);
+        if (base.backgroundImg) {
+            const img = await createImg(base.backgroundImg, base.loadingTimeout);
+            ctx.drawImage(img, 0, 0, width, height);
+        }
         return config;
     }
     catch (err) {
