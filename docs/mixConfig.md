@@ -14,10 +14,10 @@
 
 |参数名|类型|必填|默认值|说明|备注|
 |---|---|---|---|---|---|
-|backgroundImg|String|是|-|合成图片的背景图，支持 url 或 base64|图片过大影响性能，建议压缩至 100k 以下|
+|backgroundImg|String|否|-|合成图片的背景图，支持 url 或 base64<br>若不传，fileType 为 jpeg 时背景为黑色，为 png 时背景透明|图片过大影响性能，建议压缩至 100k 以下|
 |width|Number|是|300|合成图片的宽度|单位 px|
 |height|Number|是|300|合成图片的高度|单位 px|
-|quality|Number|否|0.8|生成图片的质量，取值范围为 (0, 1]|-|
+|quality|Number|否|0.8|生成图片的质量，取值范围为 (0, 1]|建议设置为0.9及以下|
 |fileType|String|否|jpeg|生成图片的数据类型，值为 jpeg 或 png|-|
 |dataType|String|否|base64|最终返回的数据格式，值为 base64 或 canvas|默认返回 base64 字符；若指定为 canvas，则返回绘制完毕的 canvas 对象|
 |loadingTimeout|Number|否|5000|加载图片响应超时时间|单位 ms，背景图、动态图片超过该时间未加载完毕则返回超时信息|
