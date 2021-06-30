@@ -80,7 +80,7 @@ export const mixConfig = {
 };
 ```
 
-> 参数含义可参见 [mixConfig参数说明文档](./docs/mixConfig.md)
+> 参数含义可参见 [mixConfig参数说明文档](https://github.com/baidu/mix-img/blob/master/docs/mixConfig.md)
 
 ### 返回数据
 
