@@ -9,7 +9,7 @@
         "start": "npm run serve"
     },
     "dependencies": {
-        "mix-img": "^1.0.3",
+        "mix-img": "^1.0.6",
         "clipboard": "^2.0.6",
         "core-js": "^3.6.4",
         "jsoneditor": "^8.6.3",
