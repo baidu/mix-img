@@ -8,7 +8,7 @@ out_dir="output"
 
 # 安装依赖
 export NODE_ENV=development
-npm install --registry=http://registry.npm.baidu-int.com
+npm install
 
 # 跑一遍build
 export NODE_ENV=production
